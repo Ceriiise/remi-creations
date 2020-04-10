@@ -1,0 +1,55 @@
+.page-desc {
+  margin-left: 12rem;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.filters-button-group {
+  text-align: right;
+  display: block;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+.filters-button-group .button.is-checked {
+  color: $green;
+}
+
+.filters-button-group .button {
+  display: inline-block;
+  transition: color .2s linear;
+}
+
+.filters-button-group .button:hover
+{
+  color: $green;
+  cursor: pointer;
+}
+
+.filters-button-group .button:after {
+  content: "\2022";
+  display: inline-block;
+  margin: 0 20px;
+  color: $light-gray;
+}
+
+.filters-button-group .button:last-child:after
+{
+  content: '';
+  display: none;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.one_half {
+  margin-right: 2rem;
+}
+
+.one_half.last{
+  margin-right: 0;
+  margin-left: 2rem;
+}

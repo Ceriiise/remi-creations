@@ -1,0 +1,58 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+body {
+  background-color: $gray;
+  font-family:      $body-font;
+  font-size:        20px;
+  line-height:      35px;
+  font-weight:      400;
+  color:            $black;
+  letter-spacing:   -1px;
+  margin:           0;
+}
+
+body a {
+  text-decoration: none;
+  color: $black;
+  transition: color .2s linear, background-color .2s linear, border-color .2s linear;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+li {
+  // display: block;
+  list-style: none;
+  // margin: 0;
+  // padding: 0;
+  // line-height: normal;
+}
+
+.body-wrapper {
+  background-color: $white;
+  margin: 3rem;
+}
+
+.main-container {
+  width: 1100px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
