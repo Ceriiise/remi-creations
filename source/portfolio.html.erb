@@ -1,0 +1,29 @@
+---
+title: Portfolio
+---
+
+<div id="content" class="site-content">
+  <div class="content-1330 center-relative">
+    <div class="button-group filters-button-group pt-0">
+      <div class="button is-checked" data-filter="*">Tout</div>
+      <div class="button" data-filter=".verre">Verre</div>
+      <div class="button" data-filter=".argile">Argile</div>
+      <!-- <div class="button" data-filter=".bijoux">Bijoux</div> -->
+    </div>
+    <div class="grid" id="portfolio">
+      <div class="grid-sizer"></div>
+
+      <% data.projects.each do |project| %>
+        <div class="grid-item element-item p_one_third <%= project.type %>">
+          <div class="item">
+            <img src="<%= project.img %>" alt="<%= project.name %>">
+            <div class="portfolio-text-holder">
+              <p><%= project.name.upcase %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</div>
