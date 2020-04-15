@@ -1,7 +1,10 @@
 .page-desc {
   margin-left: 16rem;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  @media screen and (max-width: 650px) {
+    margin-left: 0px;
+  };
 }
 
 .filters-button-group {
@@ -9,6 +12,9 @@
   display: block;
   padding-top: 8rem;
   padding-bottom: 2rem;
+  @media screen and (max-width: 650px) {
+    padding-top: 2rem;
+  }
 }
 
 .filters-button-group .button.is-checked {
@@ -43,6 +49,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
+  @media screen and (max-width: 1020px) {
+    display: block;
+  };
 }
 
 .one_half {
@@ -52,4 +61,7 @@
 .one_half.last{
   margin-right: 0;
   margin-left: 2rem;
+  @media screen and (max-width: 1020px) {
+    margin-left: 0;
+  };
 }
