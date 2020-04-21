@@ -2,7 +2,7 @@
   img: '/images/fleur_orange.jpg'
   type: 'verre'
 - name: 'Fleur rose'
-  img: '/images/fleur_rose.png'
+  img: '/images/fleur_rose.jpg'
   type: 'verre'
 - name: 'Plume'
   img: '/images/plume.jpg'
