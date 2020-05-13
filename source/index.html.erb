@@ -17,15 +17,17 @@ title: Remi Créations
       <div class="grid" id="portfolio">
         <div class="grid-sizer"></div>
 
-        <% data.projects.first(6).each do |project| %>
-          <div class="grid-item element-item p_one_third <%= project.type %>">
-            <div class="item">
-              <img src="<%= project.img %>" alt="<%= project.name %>">
-              <div class="portfolio-text-holder">
-                <p><%= project.name.upcase %></p>
+        <% data.projects.each do |project| %>
+          <% if project.love %>
+            <div class="grid-item element-item p_one_third <%= project.type %>">
+              <div class="item">
+                <img src="<%= project.img %>" alt="<%= project.name %>">
+                <div class="portfolio-text-holder">
+                  <p><%= project.name.upcase %></p>
+                </div>
               </div>
             </div>
-          </div>
+          <% end %>
         <% end %>
 
       </div>
